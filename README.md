@@ -1,5 +1,5 @@
 # upgrade-lnd
-Code to automatically update lnd (currently only for Debian Linux AMD64)
+Code to automatically upgrade lnd (currently only for Debian on AMD64)
 
 ## To Execute, run it with sudo:
 ```
