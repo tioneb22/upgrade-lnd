@@ -1,9 +1,6 @@
 # upgrade-lnd
 Code to automatically upgrade lnd (currently only for Debian on AMD64)
 
-## About
-Running it with the ```-f``` parameter will force it to download the latest version with any new commits.
-
 ##  Parameters
 ```-f``` Forcefully download and install the latest version.
 
@@ -12,3 +9,9 @@ Running it with the ```-f``` parameter will force it to download the latest vers
 sudo ./upgrade-lnd.sh -f
 ```
 It will download the binaries to the "/tmp" directory. If the version is the same, it will delete the file and directory before downloading a fresh copy.
+
+## Pipeline
+My next step is to add an architecture parameter to support different systems (they would need to support BASH).
+
+## Current Issues
+I'm noticing that my ```curl``` commands occasionally hang, I'm not sure why. I'll try to implement a timeout / retry function to fix it.
