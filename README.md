@@ -2,7 +2,7 @@
 Code to automatically upgrade lnd (currently only for Debian on AMD64)
 
 ##  Parameters
-```-f``` Forcefully download and install the latest version.
+```-f``` Forcefully download and install the latest version.  
 ```-p``` Subscribe to pre-releases (rc1, rc2 etc.).
 
 ## To Execute, run it with sudo:
